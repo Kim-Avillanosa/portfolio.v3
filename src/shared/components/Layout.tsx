@@ -37,7 +37,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           {links.map((item, idx) => {
             const isActive = pathname === item.url;
             return (
-              <Navbar.Link isActive={isActive} href={item.url}>
+              <Navbar.Link key={idx} isActive={isActive} href={item.url}>
                 {item.text}
               </Navbar.Link>
             );

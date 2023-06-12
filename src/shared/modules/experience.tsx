@@ -14,7 +14,7 @@ const Experience: React.FC<ExperienceProps> = () => {
     <Grid>
       {data?.map((item, idx) => {
         return (
-          <div>
+          <div key={idx}>
             <h5>
               <strong> {item.company}</strong>{" "}
               <Badge size={"xs"} color="success">
