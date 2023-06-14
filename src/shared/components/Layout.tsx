@@ -52,7 +52,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             checked={isDark}
             onChange={(e) => setTheme(e.target.checked ? "dark" : "light")}
           />
-          <Link href={"/a"}>Download my resume</Link>
+          <Link target="_blank" href={"/assets/Kim Cyriel S. Avillanosa.pdf"}>
+            Download my resume
+          </Link>
           <Button as={Link} href="/contact">
             Say Hello
           </Button>
