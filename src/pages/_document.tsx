@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en" className="light">
       <Head>
-        {/* <meta name="application-name" content="nextlaunch" />
+        <meta name="application-name" content="nextlaunch" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="nextlaunch" />
@@ -73,7 +73,7 @@ export default function Document() {
         />
         <meta property="og:site_name" content="nextlaunch" />
         <meta property="og:url" content="" />
-        <meta property="og:image" content="/favicon/apple-touch-icon.png" /> */}
+        <meta property="og:image" content="/favicon/apple-touch-icon.png" />
       </Head>
       <body>
         <Main />
