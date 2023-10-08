@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { SWRConfig } from "swr";
 // pages/_app.js
 import { NextUIProvider } from "@nextui-org/react";
+import PWA from "@/shared/pwa/PWA";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -13,9 +14,11 @@ export default function App({ Component, pageProps }: AppProps) {
           fetch(resource, init).then((res) => res.json()),
       }}
     >
-      <NextUIProvider>
-        <Component {...pageProps} />
-      </NextUIProvider>
+      <PWA>
+        <NextUIProvider>
+          <Component {...pageProps} />
+        </NextUIProvider>
+      </PWA>
     </SWRConfig>
   );
 }
