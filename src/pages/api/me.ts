@@ -19,6 +19,11 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Me>) {
       linkedIn: "https://www.linkedin.com/in/kmavillanosa",
       more: "https://linktr.ee/kmavillanosa",
     },
-    offer : ["Front-end Development", "Back-end Development", "Desktop Applications Development", "Web Scraping and other automation"]
+    offer: [
+      "Front-end Development",
+      "Back-end Development",
+      "Desktop Applications Development",
+      "Web Scraping and other automation",
+    ],
   });
 }

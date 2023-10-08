@@ -12,11 +12,12 @@ export default function handler(
       companyAbout: "One of the leading financial services in the Philippines.",
       companyLocation: "Puerto Princesa City, Palawan",
       companyLogo: "/images/pps.png",
-      position: "Software Engineer",
+      position: "Software Engineer Consultant",
       period: "June 2023 - Current",
       responsibilities: [
+        "Research and development",
         "Handling maintainance on legacy systems",
-        "Providing technical advice",
+        "Providing technical advice for development teams.",
       ],
     },
     {
@@ -27,7 +28,7 @@ export default function handler(
       companyLocation: "Puerto Princesa City, Palawan",
       companyLogo: "/images/yondu.png",
       position: "Senior Software Engineer (Full Stack)",
-      period: "March 2022 - Current",
+      period: "March 2022 - August 2023",
       responsibilities: [
         "Deployed Under (Morphsys inc) Corus Consulting and Applus+",
         "Develop solutions on both backend and frontend",

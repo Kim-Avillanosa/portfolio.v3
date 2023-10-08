@@ -1,34 +1,21 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import type { AppProps } from "next/app";
-
-// 1. Import `createTheme`
-import { createTheme, NextUIProvider } from "@nextui-org/react";
-import { ThemeProvider as NextThemesProvider } from "next-themes";
-
-// 2. Call `createTheme` and pass your custom values
-const lightTheme = createTheme({
-  type: "light",
-  theme: {},
-});
-
-const darkTheme = createTheme({
-  type: "dark",
-  theme: {},
-});
+import { SWRConfig } from "swr";
+// pages/_app.js
+import { NextUIProvider } from "@nextui-org/react";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <NextThemesProvider
-      defaultTheme="system"
-      attribute="class"
+    <SWRConfig
       value={{
-        light: lightTheme.className,
-        dark: darkTheme.className,
+        refreshInterval: 3000,
+        fetcher: (resource, init) =>
+          fetch(resource, init).then((res) => res.json()),
       }}
     >
       <NextUIProvider>
         <Component {...pageProps} />
       </NextUIProvider>
-    </NextThemesProvider>
+    </SWRConfig>
   );
 }
