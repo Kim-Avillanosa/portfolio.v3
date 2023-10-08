@@ -15,9 +15,10 @@ const withPWA = require("next-pwa")({
 });
 
 const nextConfig = withPWA({
+  output: "export",
   publicRuntimeConfig: {
     // you can change this name
-    projectName: "nextlaunch",
+    projectName: "portfolio-app",
   },
 });
 module.exports = nextConfig;
