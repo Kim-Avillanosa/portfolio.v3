@@ -2,6 +2,7 @@
   "name": "nextlaunch",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "scripts": {
     "lint": "npm run lint",
     "dev:tailwind": "npx tailwindcss -i ./src/styles/globals.css -o ./public/output.css",
