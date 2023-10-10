@@ -2,5 +2,5 @@
   functions = "netlify/functions"
 
 [build]
-command = "npm run prod:tailwind && env-cmd -f ./variables/.env.production next build"
+command = "env-cmd -f ./variables/.env.production next build"
 publish = ".next"
