@@ -12,6 +12,7 @@ const withPWA = require("next-pwa")({
   runtimeCaching,
   buildExcludes: [/middleware-manifest.json$/],
   sw: "/server.js",
+  maximumFileSizeToCacheInBytes: 17 * 1024 * 1024,
 });
 
 const nextConfig = withPWA(
