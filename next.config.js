@@ -14,15 +14,10 @@ const withPWA = require("next-pwa")({
   sw: "/server.js",
 });
 
-const nextConfig = withPWA(
-  {
-    basePath: "",
+const nextConfig = withPWA({
+  publicRuntimeConfig: {
+    // you can change this name
+    projectName: "portfolio-app",
   },
-  {
-    publicRuntimeConfig: {
-      // you can change this name
-      projectName: "portfolio-app",
-    },
-  }
-);
+});
 module.exports = nextConfig;
