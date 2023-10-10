@@ -26,7 +26,7 @@ const Headline = () => {
                     style={{
                         fontSize: "5em",
                         fontWeight: "bold",
-                        color: "#4cd137",
+                        color: "#26de81",
                     }}
                 >
                     Kim Avillanosa

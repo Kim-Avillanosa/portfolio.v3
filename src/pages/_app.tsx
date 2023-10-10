@@ -7,18 +7,18 @@ import PWA from "@/shared/pwa/PWA";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <SWRConfig
-      value={{
-        refreshInterval: 3000,
-        fetcher: (resource, init) =>
-          fetch(resource, init).then((res) => res.json()),
-      }}
-    >
-      <PWA>
-        <NextUIProvider>
+    <NextUIProvider>
+      <SWRConfig
+        value={{
+          refreshInterval: 3000,
+          fetcher: (resource, init) =>
+            fetch(resource, init).then((res) => res.json()),
+        }}
+      >
+        <PWA>
           <Component {...pageProps} />
-        </NextUIProvider>
-      </PWA>
-    </SWRConfig>
+        </PWA>
+      </SWRConfig>
+    </NextUIProvider>
   );
 }
