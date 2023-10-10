@@ -5,28 +5,7 @@ import MyInfo from "../experience/MyInfo";
 const QuickBackground = () => {
     return (
         <div id="quickbackground" style={{ height: "100vh" }}>
-            <Container style={{ marginTop: "50px" }}>
-                <Row>
-                    <Col md={12} xl={6}>
-                        <MyInfo />
-                    </Col>
-                </Row>
-                <Row
-                    style={{
-                        marginTop: "10px",
-                    }}
-                >
-                    <Col md={12} xl={6}>
-                        <WorkExperience />
-                    </Col>
-
-                    <Col md={12} xl={6}>
-                        <Row>
-                            <MyTechStack />
-                        </Row>
-                    </Col>
-                </Row>
-            </Container>
+            <h1>Sample</h1>
         </div>
     );
 };
