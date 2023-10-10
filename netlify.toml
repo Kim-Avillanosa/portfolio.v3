@@ -1,2 +1,6 @@
 [build]
   functions = "netlify/functions"
+
+[build]
+command = "npm run build:prod"
+publish = ".next"
