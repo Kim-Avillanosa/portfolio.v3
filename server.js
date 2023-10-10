@@ -17,7 +17,7 @@ app.prepare().then(() => {
       pathname === "/sw.js" ||
       /^\/(workbox|worker|fallback)-\w+\.js$/.test(pathname)
     ) {
-      const filePath = join(__dirname, "static", pathname);
+      const filePath = join(__dirname, ".next", pathname);
       app.serveStatic(req, res, filePath);
     } else {
       handle(req, res, parsedUrl);
