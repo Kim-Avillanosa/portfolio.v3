@@ -3246,7 +3246,7 @@ video {
 }
 
 .quickInfoBg {
-  background-image: url("../../public/assets/timelapse.gif");
+  background-image: url(../../public/assets/timelapse.gif);
   /* background-repeat: no-repeat; */
   background-size: cover;
   /* You can also use 'contain' or specify dimensions */
