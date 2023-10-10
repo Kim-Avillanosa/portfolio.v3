@@ -46,7 +46,7 @@ const StackDetails: React.FC<StackDetailsProps> = ({ stack }) => {
 };
 
 const Stack: React.FC<StackProps> = () => {
-    const { data, isLoading } = useSWR<TechStack[]>(`/stack`, fetcher);
+    const { data, isLoading } = useSWR<TechStack[]>(`/stack`);
 
     const router = useRouter();
 

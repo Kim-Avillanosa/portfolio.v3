@@ -13,7 +13,7 @@ import {
 import useSWR from "swr";
 
 const WorkExperience: React.FC = () => {
-    const { data, isLoading } = useSWR<Experience[]>("/experience", fetcher);
+    const { data, isLoading } = useSWR<Experience[]>("/experience");
 
     if (isLoading)
         return (

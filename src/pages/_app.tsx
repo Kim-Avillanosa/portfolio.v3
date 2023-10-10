@@ -4,7 +4,7 @@ import { SWRConfig } from "swr";
 // pages/_app.js
 import { NextUIProvider } from "@nextui-org/react";
 import PWA from "@/shared/pwa/PWA";
-import fetcher from "@/shared/utils/fetcher";
+import { fetcher } from "@/shared/utils/fetcher";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

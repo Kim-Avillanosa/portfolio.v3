@@ -3,7 +3,7 @@ import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
 import useSWR from "swr";
 
 const MyInfo = () => {
-    const { data, isLoading } = useSWR<Me>("/me", fetcher);
+    const { data, isLoading } = useSWR<Me>("/me");
 
     if (isLoading) return <div>Please wait</div>;
 
