@@ -16,7 +16,7 @@ const withPWA = require("next-pwa")({
 
 const nextConfig = withPWA(
   {
-    basePath: ".",
+    basePath: "/",
   },
   {
     publicRuntimeConfig: {
