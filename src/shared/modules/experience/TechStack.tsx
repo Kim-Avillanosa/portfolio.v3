@@ -14,6 +14,7 @@ import {
 import Link from "next/link";
 import { ReactNode, useState } from "react";
 import { useRouter } from "next/router";
+import { fetcher } from "@/shared/utils/fetcher";
 
 interface StackProps { }
 
@@ -45,7 +46,7 @@ const StackDetails: React.FC<StackDetailsProps> = ({ stack }) => {
 };
 
 const Stack: React.FC<StackProps> = () => {
-    const { data, isLoading } = useSWR<TechStack[]>(`/api/stack`);
+    const { data, isLoading } = useSWR<TechStack[]>(`/stack`, fetcher);
 
     const router = useRouter();
 

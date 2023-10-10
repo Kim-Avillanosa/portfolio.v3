@@ -1,8 +1,9 @@
+import { fetcher } from "@/shared/utils/fetcher";
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
 import useSWR from "swr";
 
 const MyInfo = () => {
-    const { data, isLoading } = useSWR<Me>("/api/me");
+    const { data, isLoading } = useSWR<Me>("/me", fetcher);
 
     if (isLoading) return <div>Please wait</div>;
 

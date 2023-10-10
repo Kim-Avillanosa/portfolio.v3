@@ -1,3 +1,9 @@
-const fetcher = (url : string) => fetch(url).then((res) => res.json());
+import axios from "axios";
+import useSWR from "swr";
 
-export default fetcher
+//* Set Axios Base URL
+const apiEndPoint = process.env.NEXT_PUBLIC_API_PATH;
+axios.defaults.baseURL = apiEndPoint;
+
+//* Fetcher Function
+export const fetcher = (url: string) => axios.get(url).then((res) => res.data);

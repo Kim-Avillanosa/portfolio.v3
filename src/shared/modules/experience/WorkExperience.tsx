@@ -1,3 +1,4 @@
+import { fetcher } from "@/shared/utils/fetcher";
 import {
     Card,
     CardHeader,
@@ -12,7 +13,7 @@ import {
 import useSWR from "swr";
 
 const WorkExperience: React.FC = () => {
-    const { data, isLoading } = useSWR<Experience[]>("/api/experience");
+    const { data, isLoading } = useSWR<Experience[]>("/experience", fetcher);
 
     if (isLoading)
         return (
