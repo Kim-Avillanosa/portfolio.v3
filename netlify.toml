@@ -2,6 +2,6 @@
   functions = "netlify/functions"
 
 [[redirects]]
-  from = "/_next/*"
+  from = "/_next"
   to = "/static/:splat"
   status = 200
