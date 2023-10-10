@@ -2,3 +2,9 @@
   functions = "netlify/functions"
   publish = ".next"
   build = "npm run build"
+
+
+[[redirects]]
+  from = "/_next/*"
+  to = "/static/:splat"
+  status = 200
