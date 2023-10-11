@@ -3,7 +3,8 @@ import { useAddToHomescreenPrompt } from "@/shared/hooks/useAddToHomescreenPromp
 import GoogleAnalytics from "../GoogleAnalytics";
 import AppNavBar from "./AppNavBar";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
-import Headline from "../../modules/home/Headline";
+import AppFooter from "./AppFooter";
+import { motion, useScroll } from "framer-motion";
 
 interface LayoutProps {
     children: ReactNode;
@@ -15,11 +16,15 @@ interface NavLink {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
+    const { scrollYProgress } = useScroll();
+
     return (
-        <NextThemesProvider attribute="class" defaultTheme="light">
-            <AppNavBar />
+        <NextThemesProvider attribute="class" defaultTheme="dark">
+
+            {/* <AppNavBar /> */}
             <GoogleAnalytics />
             <div className="z-40 gap-4 items-center">{children}</div>
+            <AppFooter />
         </NextThemesProvider>
     );
 };

@@ -43,11 +43,20 @@ const Headline = () => {
 
                 <div style={{ marginTop: "100px" }}>
                     <Button
+                        style={{ margin: "2px" }}
                         size="lg"
                         color="default"
                         onClick={() => scrollToMyDiv("quickbackground")}
                     >
                         See more
+                    </Button>
+                    <Button
+                        style={{ margin: "2px" }}
+                        size="lg"
+                        color="primary"
+                        onClick={() => scrollToMyDiv("quickbackground")}
+                    >
+                        Download My Resume
                     </Button>
                 </div>
             </div>

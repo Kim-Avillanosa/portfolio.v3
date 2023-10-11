@@ -1,24 +1,22 @@
-import { Container, Row, Col } from "react-grid-system";
-import WorkExperience from "./WorkExperience";
 import LargeHeadline from "@/shared/components/LargeHeadline";
-const QuickBackground = () => {
+import { Container, Row, Col } from "react-grid-system";
+import WorkExperience from "../QuickBackground/WorkExperience";
+
+const ForFun = () => {
     return (
-        <div
-            id="quickbackground"
-            style={{ height: "100vh", background: "#0D47A1" }}
-        >
+        <div style={{ height: "100vh", backgroundColor: "#0097e6" }}>
             <Container style={{ padding: "30px" }}>
                 <Row>
+                    <Col>
+                        <WorkExperience />
+                    </Col>
                     <Col>
                         <LargeHeadline
                             color="#26de81"
                             speed={1}
                             size={5}
-                            text={["Professional Experience"]}
+                            text={["What I do for fun."]}
                         />
-                    </Col>
-                    <Col>
-                        <WorkExperience />
                     </Col>
                 </Row>
             </Container>
@@ -26,4 +24,4 @@ const QuickBackground = () => {
     );
 };
 
-export default QuickBackground;
+export default ForFun;

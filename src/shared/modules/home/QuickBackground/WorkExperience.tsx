@@ -17,7 +17,7 @@ const WorkExperience: React.FC = () => {
 
     if (isLoading)
         return (
-            <div style={{ textAlign: "center", marginTop: "50px" }}>
+            <div style={{ textAlign: "center" }}>
                 <Spinner />
             </div>
         );

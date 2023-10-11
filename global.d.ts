@@ -51,6 +51,17 @@ declare global {
     docUrl: string;
     imgUrl: string;
   };
+
+  type ProjectSource = {
+    imgUrl: string;
+    projectUrl: string;
+  };
+
+  type Project = {
+    title: string;
+    description: string;
+    sources: ProjectSource[];
+  };
 }
 
 export default global;

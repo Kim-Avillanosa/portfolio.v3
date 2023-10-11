@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en" className="light">
+    <Html lang="en" className="dark">
       <Head>
         <meta name="application-name" content="nextlaunch" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
