@@ -1,11 +1,19 @@
-import WorkExperience from "../../experience/WorkExperience";
-import MyTechStack from "../../experience/TechStack";
 import { Container, Row, Col } from "react-grid-system";
-import MyInfo from "../../experience/MyInfo";
+import WorkExperience from "./WorkExperience";
+import LargeHeadline from "@/shared/components/LargeHeadline";
 const QuickBackground = () => {
     return (
         <div id="quickbackground" style={{ height: "100vh" }}>
-            <h1>Sample</h1>
+            <Container style={{ marginTop: "100px" }}>
+                <Row>
+                    <Col>
+                        <LargeHeadline color="#26de81" speed={1} size={5} text={["Work Experience"]} />
+                    </Col>
+                    <Col>
+                        <WorkExperience />
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 };
