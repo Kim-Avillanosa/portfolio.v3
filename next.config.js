@@ -17,7 +17,6 @@ const withPWA = require("next-pwa")({
 
 const nextConfig = withPWA(
   {
-    output: "export",
     assetPrefix: process.env.NODE_ENV === "production" ? "" : "",
     // basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
   },
