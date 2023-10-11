@@ -3,7 +3,12 @@ import LargeHeadline from "../../components/LargeHeadline";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { scrollToMyDiv } from "@/shared/utils/scrollToDiv";
+import useSWR from "swr";
 const Headline = () => {
+    const { data, isLoading } = useSWR<Me>("/me");
+
+    if (isLoading) return <div>Please wait</div>;
+
     return (
         <div
             id="headline"
@@ -31,7 +36,7 @@ const Headline = () => {
                 >
                     Kim Avillanosa
                 </div>
-                <div className="mt-3">
+                <div>
                     <LargeHeadline
                         speed={60}
                         color="#ffffff"
@@ -39,13 +44,27 @@ const Headline = () => {
                         size={1}
                     />
                 </div>
+
+                <div style={{ margin: "10px" }}>
+                    <a href={data?.socials.linkedIn} target="_blank">
+                        <img src="assets/linkedin.png" />
+                    </a>
+
+                    <a href={data?.socials.github} target="_blank">
+                        <img src="assets/github.png" />
+                    </a>
+
+                    <a href={data?.socials.more} target="_blank">
+                        <img src="assets/more.png" />
+                    </a>
+                </div>
                 <div style={{ marginTop: "100px" }}>
                     <Button
                         size="lg"
                         color="default"
                         onClick={() => scrollToMyDiv("quickbackground")}
                     >
-                        Learn more about me.
+                        See more
                     </Button>
                 </div>
             </div>
