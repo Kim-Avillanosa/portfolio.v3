@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .quickInfoBg {
-    background-image: url("/public/assets/timelapse.gif");
+    background-image: url("/assets/timelapse.gif");
     /* background-repeat: no-repeat; */ 
     background-size: cover; /* You can also use 'contain' or specify dimensions */
     background-attachment: fixed; /* Optional - makes the background fixed */
