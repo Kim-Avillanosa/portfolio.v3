@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/_next/*"
-  to = "/static/:splat"
-  status = 200
