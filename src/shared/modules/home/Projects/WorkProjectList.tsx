@@ -11,10 +11,10 @@ const ProjectList = () => {
     return data?.map((item, idx) => {
         return (
             <motion.div
+                key={idx}
                 whileHover={{
                     scale: 1.2,
-                    margin: "20px"
-
+                    margin: "20px",
                 }}
                 style={{
                     display: "flex",
@@ -24,7 +24,6 @@ const ProjectList = () => {
                 }}
             >
                 <Card
-                    key={idx}
                     style={{
                         margin: "20px",
                     }}
