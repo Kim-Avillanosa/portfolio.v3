@@ -7,7 +7,7 @@ import useSWR from "swr";
 const Headline = () => {
     const { data, isLoading } = useSWR<Me>("/me");
 
-    if (isLoading) return <div>Please wait</div>;
+    // if (isLoading) return <div>Please wait</div>;
 
     return (
         <div
