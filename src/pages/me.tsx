@@ -13,10 +13,13 @@ const Me: NextPage = () => {
         <Page title="Kim Avillanosa">
             <Layout>
                 <Headline />
-                <QuickBackground />
-                <WorkProjects />
-                <TechStack />
-                <ForFun />
+                <div className="">
+                    <QuickBackground />
+                    <WorkProjects />
+                    <TechStack />
+                    <ForFun />
+                </div>
+
             </Layout>
         </Page>
     );

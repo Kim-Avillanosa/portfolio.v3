@@ -60,6 +60,7 @@ declare global {
   type Project = {
     title: string;
     description: string;
+    bannerUrl: string;
     sources: ProjectSource[];
   };
 }

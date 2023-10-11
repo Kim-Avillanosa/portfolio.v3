@@ -4,7 +4,7 @@ import WorkExperience from "../QuickBackground/WorkExperience";
 
 const ForFun = () => {
     return (
-        <div style={{ height: "100vh", backgroundColor: "#0097e6" }}>
+        <div style={{ height: "100vh" }}>
             <Container style={{ padding: "30px" }}>
                 <Row>
                     <Col>

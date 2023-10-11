@@ -2,7 +2,7 @@ import { Container } from "react-grid-system";
 
 const AppFooter: React.FC = () => {
     return (
-        <div style={{ height: "50vh", paddingTop: "100px", backgroundColor: "royalblue" }}>
+        <div style={{ height: "50vh", paddingTop: "100px", backgroundColor: "#1e272e" }}>
             <Container style={{ marginTop: "50px" }}>
                 <footer className="footer">
                     <div className="container">

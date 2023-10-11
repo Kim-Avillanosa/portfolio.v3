@@ -4,7 +4,7 @@ import WorkExperience from "../QuickBackground/WorkExperience";
 
 const TechStack = () => {
     return (
-        <div style={{ height: "100vh", backgroundColor: "#00a8ff" }}>
+        <div style={{ height: "100vh" }}>
             <Container style={{ padding: "30px" }}>
                 <Row>
                     <Col>
@@ -12,7 +12,7 @@ const TechStack = () => {
                             color="#26de81"
                             speed={1}
                             size={5}
-                            text={["What i use"]}
+                            text={["What I use."]}
                         />
                     </Col>
                     <Col>

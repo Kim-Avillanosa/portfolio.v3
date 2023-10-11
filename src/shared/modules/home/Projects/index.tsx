@@ -1,17 +1,16 @@
 import LargeHeadline from "@/shared/components/LargeHeadline";
 import { Container, Row, Col } from "react-grid-system";
 import WorkExperience from "../QuickBackground/WorkExperience";
+import ProjectList from "./WorkProjectList";
 
 const WorkProjects = () => {
     return (
-        <div
-            id="workProjects"
-            style={{ height: "100vh", backgroundColor: "#1565C0" }}
-        >
+        <div id="workProjects" style={{ height: "100%" }}>
             <Container style={{ padding: "30px" }}>
                 <Row>
                     <Col>
-                        <WorkExperience />
+                        {/* <WorkProjectListSample /> */}
+                        <ProjectList />
                     </Col>
                     <Col>
                         <LargeHeadline

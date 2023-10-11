@@ -5,7 +5,7 @@ const QuickBackground = () => {
     return (
         <div
             id="quickbackground"
-            style={{ height: "100vh", background: "#0D47A1" }}
+            style={{ height: "100vh" }}
         >
             <Container style={{ padding: "30px" }}>
                 <Row>
@@ -14,7 +14,7 @@ const QuickBackground = () => {
                             color="#26de81"
                             speed={1}
                             size={5}
-                            text={["Professional Experience"]}
+                            text={["Professional Experience."]}
                         />
                     </Col>
                     <Col>

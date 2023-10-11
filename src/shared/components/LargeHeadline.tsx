@@ -119,6 +119,7 @@ const LargeHeadline: React.FC<LargeHeadlineProps> = ({
                 speed={speed}
                 sequence={text}
                 style={{
+                    zIndex: 0,
                     borderRadius: "2px",
                     // background: "#f5f6fa",
                     padding: "10px",
