@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { scrollToMyDiv } from "@/shared/utils/scrollToDiv";
 import useSWR from "swr";
+import Link from "next/link";
 const Headline = () => {
     return (
         <div
@@ -50,14 +51,18 @@ const Headline = () => {
                     >
                         See more
                     </Button>
-                    <Button
-                        style={{ margin: "2px" }}
-                        size="lg"
-                        color="primary"
-                        onClick={() => scrollToMyDiv("quickbackground")}
-                    >
-                        Download My Resume
-                    </Button>
+
+                    <Link href={`/assets/kim cyriel s. avillanosa.pdf`} target="_blank">
+                        <Button
+                            style={{ margin: "2px" }}
+                            size="lg"
+                            color="primary"
+                            onClick={() => scrollToMyDiv("quickbackground")}
+                        >
+                            Download My Resume
+                        </Button>
+                    </Link>
+
                 </div>
             </div>
         </div>
