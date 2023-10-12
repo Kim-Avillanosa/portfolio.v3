@@ -26,7 +26,8 @@ const AppFooter: React.FC = () => {
         >
             <div style={containerStyle}>
                 <div style={childStyle}>
-                    <ContactTile color="#222f3e"
+                    <ContactTile
+                        color="#222f3e"
                         label="Github"
                         url={data?.socials.github ?? ""}
                         caption="Follow me on Github"
@@ -34,7 +35,8 @@ const AppFooter: React.FC = () => {
                     />
                 </div>
                 <div style={childStyle}>
-                    <ContactTile color="#1e3799"
+                    <ContactTile
+                        color="#1e3799"
                         label="LinkedIn"
                         url={data?.socials.linkedIn ?? ""}
                         caption="Connect with me on LinkedIn"
@@ -42,14 +44,18 @@ const AppFooter: React.FC = () => {
                     />
                 </div>
                 <div style={childStyle}>
-                    <ContactTile color="#3c6382"
+                    <ContactTile
+                        color="#3c6382"
                         label="More"
                         url={data?.socials.more ?? ""}
                         caption="Connect with me on other socials"
                         logoUrl="/assets/link.png"
                     />
                 </div>
-
+            </div>
+            <div style={{ textAlign: "center" }}>
+                <p>Email me : {data?.email}</p>
+                <p>© {new Date().getFullYear()} kmavillanosa</p>
             </div>
         </div>
     );

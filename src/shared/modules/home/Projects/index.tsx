@@ -2,6 +2,8 @@ import LargeHeadline from "@/shared/components/LargeHeadline";
 import { Container, Row, Col } from "react-grid-system";
 import WorkExperience from "../QuickBackground/WorkExperience";
 import WorkProjectSlide from "./WorkProjectSlide";
+import { Button } from "@nextui-org/react";
+import { scrollToMyDiv } from "@/shared/utils/scrollToDiv";
 
 const WorkProjects = () => {
     return (
@@ -16,19 +18,27 @@ const WorkProjects = () => {
                         <WorkProjectSlide />
                     </Col>
                     <Col
-                        xl={4}
+                        xl={6}
                         style={{
                             textAlign: "center",
                             padding: "10px",
                         }}
                     >
                         <LargeHeadline
-                            color="#212121"
+                            color="#CAD3C8"
                             speed={1}
                             size={4}
-                            text={["Development Projects"]}
+                            text={["Digital Projects"]}
                         />
-                        <p style={{ color: "#212121" }}>(Slide up)</p>
+
+                        <Button
+                            variant="shadow"
+                            color="primary"
+                            size="lg"
+                            onClick={() => scrollToMyDiv("techStack")}
+                        >
+                            Know what I use
+                        </Button>
                     </Col>
                 </Row>
             </Container>

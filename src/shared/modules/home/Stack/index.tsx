@@ -5,7 +5,7 @@ import TechStackList from "./TechStackList";
 
 const TechStack = () => {
     return (
-        <div style={{ height: "100vh" }}>
+        <div id="techStack" className="techStackBg" style={{ height: "100vh" }}>
             <Container style={{ padding: "30px" }}>
                 <Row>
                     <Col
@@ -15,9 +15,9 @@ const TechStack = () => {
                         }}
                     >
                         <LargeHeadline
-                            color="#26de81"
+                            color="#212121"
                             speed={1}
-                            size={3}
+                            size={4}
                             text={["Tech Stack"]}
                         />
                     </Col>

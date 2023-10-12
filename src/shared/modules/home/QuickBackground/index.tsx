@@ -22,10 +22,15 @@ const QuickBackground = () => {
                         <LargeHeadline
                             color="#26de81"
                             speed={1}
-                            size={5}
+                            size={4}
                             text={["Career Background"]}
                         />
-                        <Button size="lg" onClick={() => scrollToMyDiv("workProjects")}>
+                        <Button
+                            variant="shadow"
+                            color="primary"
+                            size="lg"
+                            onClick={() => scrollToMyDiv("workProjects")}
+                        >
                             See my projects
                         </Button>
                     </Col>
