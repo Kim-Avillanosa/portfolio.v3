@@ -7,25 +7,6 @@ export default function handler(
 ) {
   res.status(200).json([
     {
-      title: "NextLaunch",
-      description: "PWA Boilerplate built along NextJS 🚀🚀🚀",
-      bannerUrl: "/assets/banner.png",
-      sources: [
-        {
-          imgUrl: "/assets/npm.png",
-          projectUrl: "https://www.npmjs.com/package/@kmavillanosa/nextlaunch",
-        },
-        {
-          imgUrl: "/assets/github.png",
-          projectUrl: "https://github.com/Kim-Avillanosa/nextlaunch",
-        },
-        {
-          imgUrl: "/assets/code.png",
-          projectUrl: "https://kmavillanosa-nextlaunch.netlify.app/",
-        },
-      ],
-    },
-    {
       title: "BidBox",
       description: "A sample web app that handles item auctions",
       bannerUrl: "/assets/bidbox.png",
@@ -44,6 +25,26 @@ export default function handler(
         },
       ],
     },
+    {
+      title: "NextLaunch",
+      description: "PWA Boilerplate built along NextJS 🚀🚀🚀",
+      bannerUrl: "/assets/banner.png",
+      sources: [
+        {
+          imgUrl: "/assets/npm.png",
+          projectUrl: "https://www.npmjs.com/package/@kmavillanosa/nextlaunch",
+        },
+        {
+          imgUrl: "/assets/github.png",
+          projectUrl: "https://github.com/Kim-Avillanosa/nextlaunch",
+        },
+        {
+          imgUrl: "/assets/code.png",
+          projectUrl: "https://kmavillanosa-nextlaunch.netlify.app/",
+        },
+      ],
+    },
+
     {
       title: "TonerHaven",
       description: "An E-Commerce platform that sells printer supplies",

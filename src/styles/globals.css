@@ -4,15 +4,24 @@
 
 .quickInfoBg {
   background-image: url("/assets/timelapse.gif");
-  /* background-repeat: no-repeat; */
-  background-size: cover; /* You can also use 'contain' or specify dimensions */
-  background-attachment: fixed; /* Optional - makes the background fixed */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.subContentBg {
-  /* background-repeat: no-repeat; */
-  background-size: cover; /* You can also use 'contain' or specify dimensions */
-  background-attachment: fixed; /* Optional - makes the background fixed */
+.workExperienceBg {
+  background-image: url("/assets/space.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.projectBg { 
+
+  background-image: url("/assets/sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .progress-bar {

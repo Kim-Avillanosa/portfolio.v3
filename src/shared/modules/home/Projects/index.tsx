@@ -1,30 +1,34 @@
 import LargeHeadline from "@/shared/components/LargeHeadline";
 import { Container, Row, Col } from "react-grid-system";
 import WorkExperience from "../QuickBackground/WorkExperience";
-import ProjectList from "./WorkProjectList";
+import WorkProjectSlide from "./WorkProjectSlide";
 
 const WorkProjects = () => {
     return (
-        <div id="workProjects" style={{ height: "100%" }}>
+        <div
+            id="workProjects"
+            className="projectBg"
+            style={{ paddingTop: "100px", height: "100%" }}
+        >
             <Container style={{ padding: "30px" }}>
                 <Row>
                     <Col>
-                        {/* <WorkProjectListSample /> */}
-                        <ProjectList />
+                        <WorkProjectSlide />
                     </Col>
                     <Col
+                        xl={4}
                         style={{
                             textAlign: "center",
                             padding: "10px",
                         }}
                     >
                         <LargeHeadline
-                            color="#26de81"
+                            color="#212121"
                             speed={1}
-                            size={3}
-
-                            text={["Projects"]}
+                            size={4}
+                            text={["Development Projects"]}
                         />
+                        <p style={{ color: "#212121" }}>(Slide up)</p>
                     </Col>
                 </Row>
             </Container>
