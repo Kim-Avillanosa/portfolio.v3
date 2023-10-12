@@ -1,22 +1,28 @@
 import LargeHeadline from "@/shared/components/LargeHeadline";
 import { Container, Row, Col } from "react-grid-system";
 import WorkExperience from "../QuickBackground/WorkExperience";
+import TechStackList from "./TechStackList";
 
 const TechStack = () => {
     return (
         <div style={{ height: "100vh" }}>
             <Container style={{ padding: "30px" }}>
                 <Row>
-                    <Col>
+                    <Col
+                        style={{
+                            textAlign: "center",
+                            padding: "10px",
+                        }}
+                    >
                         <LargeHeadline
                             color="#26de81"
                             speed={1}
-                            size={5}
-                            text={["What I use."]}
+                            size={3}
+                            text={["Tech Stack"]}
                         />
                     </Col>
                     <Col>
-                        <WorkExperience />
+                        <TechStackList />
                     </Col>
                 </Row>
             </Container>

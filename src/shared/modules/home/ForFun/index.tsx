@@ -10,11 +10,16 @@ const ForFun = () => {
                     <Col>
                         <WorkExperience />
                     </Col>
-                    <Col>
+                    <Col
+                        style={{
+                            textAlign: "center",
+                            padding: "10px",
+                        }}
+                    >
                         <LargeHeadline
                             color="#26de81"
                             speed={1}
-                            size={5}
+                            size={3}
                             text={["What I do for fun."]}
                         />
                     </Col>

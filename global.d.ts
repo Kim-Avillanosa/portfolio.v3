@@ -38,14 +38,8 @@ declare global {
     responsibilities: string[];
     period: string;
   };
+
   type TechStack = {
-    category:
-      | "lib"
-      | "design-pattern"
-      | "software"
-      | "framework"
-      | "pl"
-      | "process";
     name: string;
     description: string;
     docUrl: string;

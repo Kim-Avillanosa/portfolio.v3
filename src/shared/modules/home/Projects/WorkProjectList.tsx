@@ -32,9 +32,9 @@ const ProjectList = () => {
                     <Image
                         alt="Woman listing to music"
                         className="object-cover"
-                        height={100}
+                        height={50}
                         src={item.bannerUrl}
-                        width={1000}
+                        width={350}
                     />
                     <CardBody>
                         <strong className="text-tiny text-white/80">{item.title}</strong>
