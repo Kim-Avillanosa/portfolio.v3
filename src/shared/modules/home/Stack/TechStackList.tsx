@@ -9,7 +9,7 @@ const TechStackList: React.FC = () => {
         <div >
             <AvatarGroup isBordered isGrid max={1000}>
                 {data?.map((item, index) => (
-                    <Avatar size="lg" isBordered radius="lg" src={item.imgUrl} />
+                    <Avatar key={index} size="lg" isBordered radius="lg" src={item.imgUrl} />
                 ))}
             </AvatarGroup>
         </div>
