@@ -16,7 +16,7 @@ const Me: NextPage = () => {
                 <div>
                     <QuickBackground />
                     <WorkProjects />
-                    <TechStack />
+                    {/* <TechStack /> */}
                     <h1 style={{ textAlign: "center", fontSize: "20px" }}>
                         <b>Keep in touch</b>
                     </h1>
