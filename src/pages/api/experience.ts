@@ -7,13 +7,28 @@ export default function handler(
 ) {
   res.status(200).json([
     {
+      type: "Full-time",
+      company: "Amihan Solutions",
+      companyAbout: "Amihan Solutions is a Swiss-owned and managed company, which started business operations in mid-2021 in the Philippines and Switzerland.",
+      companyLocation: "BGC Taguig / rafz switzerland",
+      companyLogo: "/images/amihan.jpg",
+      position: "Senior Software Developer",
+      period: "November 2023 - Current",
+      responsibilities: [
+        "Deployed under Medgate Switzerland",
+        "Frontend development",
+        "Scripting, Integration",
+        "Collaborative work",
+      ],
+    },
+    {
       type: "Part-time",
       company: "Palawan Express Pera Padala",
       companyAbout: "One of the leading financial services in the Philippines.",
       companyLocation: "Puerto Princesa City, Palawan",
       companyLogo: "/images/pps.png",
       position: "Software Engineer Consultant",
-      period: "June 2023 - Current",
+      period: "June 2023 - May 2024",
       responsibilities: [
         "Research and development",
         "Handling maintainance on legacy systems",
