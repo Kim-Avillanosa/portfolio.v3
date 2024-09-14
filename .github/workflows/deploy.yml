@@ -21,7 +21,6 @@ jobs:
       - name: Deploy to VPS
         run: |
           ssh -o StrictHostKeyChecking=no root@88.222.245.88 << 'EOF'
-            ls
             git pull origin main
             docker-compose down
             docker-compose up -d --build
