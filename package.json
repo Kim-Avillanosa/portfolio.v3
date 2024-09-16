@@ -8,7 +8,7 @@
     "prod:tailwind": "npx tailwindcss -i ./src/styles/globals.css -o ./output.css",
     "build:dev": "npm run dev:tailwind && env-cmd -f ./variables/.env.development next build",
     "build:uat": "npm run compile:tailwind && env-cmd -f ./variables/.env.uat next build",
-    "build:prod": "npm run prod:tailwind && env-cmd -f ./variables/.env.production next build",
+    "build:prod": "NODE_ENV=production npm run prod:tailwind && env-cmd -f ./variables/.env.production next build",
     "dev": "env-cmd -f ./variables/.env.development next dev",
     "uat": "env-cmd -f ./variables/.env.uat next dev",
     "prod": "env-cmd -f ./variables/.env.production next start"
