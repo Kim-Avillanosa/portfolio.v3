@@ -4,7 +4,7 @@ import ContactTile from "../ContactTile";
 import { useTheme } from "next-themes";
 
 const AppFooter: React.FC = () => {
-    const { data } = useSWR<Me>("/me");
+    const { data } = useSWR<Me>("/api/me");
 
     const containerStyle: React.CSSProperties = {
         display: "flex",
