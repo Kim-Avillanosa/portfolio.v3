@@ -46,6 +46,12 @@ declare global {
     imgUrl: string;
   };
 
+  type OfferedServices = {
+    name: string;
+    description: string;
+    imgUrl: string;
+  };
+
   type ProjectSource = {
     imgUrl: string;
     projectUrl: string;

@@ -12,7 +12,7 @@ const WorkProjects = () => {
             className="projectBg"
             style={{ paddingTop: "100px", height: "100%" }}
         >
-            <Container style={{ padding: "30px" }}>
+            <Container style={{ padding: "60px" }}>
                 <Row>
                     <Col>
                         <WorkProjectSlide />

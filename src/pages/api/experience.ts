@@ -11,6 +11,21 @@ export default function handler(
       company: "Amihan Solutions",
       companyAbout: "Amihan Solutions is a Swiss-owned and managed company, which started business operations in mid-2021 in the Philippines and Switzerland.",
       companyLocation: "BGC Taguig / rafz switzerland",
+      companyLogo: "/images/medgate.png",
+      position: "Senior Software Developer",
+      period: "November 2023 - Current",
+      responsibilities: [
+        "Deployed under Medgate Switzerland",
+        "Frontend development",
+        "Scripting, Integration",
+        "Collaborative work",
+      ],
+    },
+    {
+      type: "Full-time",
+      company: "Amihan Solutions",
+      companyAbout: "Amihan Solutions is a Swiss-owned and managed company, which started business operations in mid-2021 in the Philippines and Switzerland.",
+      companyLocation: "BGC Taguig / rafz switzerland",
       companyLogo: "/images/amihan.jpg",
       position: "Senior Software Developer",
       period: "November 2023 - Current",
@@ -22,26 +37,12 @@ export default function handler(
       ],
     },
     {
-      type: "Part-time",
-      company: "Palawan Express Pera Padala",
-      companyAbout: "One of the leading financial services in the Philippines.",
-      companyLocation: "Puerto Princesa City, Palawan",
-      companyLogo: "/images/pps.png",
-      position: "Software Engineer Consultant",
-      period: "June 2023 - May 2024",
-      responsibilities: [
-        "Research and development",
-        "Handling maintainance on legacy systems",
-        "Providing technical advice for development teams.",
-      ],
-    },
-    {
       type: "Contract",
       company: "Yondu.inc",
       companyAbout:
         "Yondu is a top IT solutions company wholly owned by Globe. It helps enterprises scale in the new digital economy by providing industry-standard, secure, and scalable solutions that create happier technological experiences. Yondu’s top-notch technology solutions include Custom Software Development, Managed IT Services, Cloud Business Solutions, Messaging Gateways, Business Productivity and Ready-to-Use Platforms.",
       companyLocation: "Puerto Princesa City, Palawan",
-      companyLogo: "/images/yondu.png",
+      companyLogo: "/images/yondu.jpg",
       position: "Senior Software Engineer (Full Stack)",
       period: "March 2022 - August 2023",
       responsibilities: [
@@ -56,7 +57,7 @@ export default function handler(
       company: "Palawan Express Pera Padala",
       companyAbout: "One of the leading financial services in the Philippines.",
       companyLocation: "Puerto Princesa City, Palawan",
-      companyLogo: "/images/pps.png",
+      companyLogo: "/images/pps.jpg",
       position: "Software Engineer",
       period: "March 2018 - March 2022",
       responsibilities: [
@@ -76,7 +77,7 @@ export default function handler(
         "International Payments Processing (IPP) is a boutique firm that delivers a full suite of payment processing solutions to high-risk small business merchants nationally and internationally.",
       companyLocation: "Puerto Princesa City, Palawan",
       position: "Programmer",
-      companyLogo: "/images/ipp.png",
+      companyLogo: "/images/ipp.jpg",
 
       period: "December 2016 - March 2018",
       responsibilities: [
@@ -85,20 +86,20 @@ export default function handler(
         "Assisted Data analysts on their weekly reports.",
       ],
     },
-    {
-      type: "Internship",
-      company:
-        "Management Information Systems Division, City Government of Puerto Princesa",
-      companyAbout:
-        "IT Department of Puerto Princesa City Hall, Palawan Philippines",
-      companyLocation: "Puerto Princesa City, Palawan",
-      position: "IT Support Intern",
-      companyLogo: "/images/ppc.png",
+    // {
+    //   type: "Internship",
+    //   company:
+    //     "Management Information Systems Division, City Government of Puerto Princesa",
+    //   companyAbout:
+    //     "IT Department of Puerto Princesa City Hall, Palawan Philippines",
+    //   companyLocation: "Puerto Princesa City, Palawan",
+    //   position: "IT Support Intern",
+    //   companyLogo: "/images/ppc.png",
 
-      period: "November 2015 - February 2016",
-      responsibilities: [
-        "Handled and maintained computer hardware and network connections for the employees of the City Government of Puerto Princesa",
-      ],
-    },
+    //   period: "November 2015 - February 2016",
+    //   responsibilities: [
+    //     "Handled and maintained computer hardware and network connections for the employees of the City Government of Puerto Princesa",
+    //   ],
+    // },
   ]);
 }

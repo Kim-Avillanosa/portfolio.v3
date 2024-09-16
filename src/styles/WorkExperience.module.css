@@ -1,0 +1,28 @@
+
+.marqueeContainer {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .marqueeContent {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    animation: marquee 10s  linear infinite;
+  }
+  
+  .marqueeItem {
+    display: inline-block;
+    margin-left : 100px; /* Adjust spacing between items */
+    margin-right : 100px; /* Adjust spacing between items */
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

@@ -1,6 +1,7 @@
 import { Container } from "react-grid-system";
 import useSWR from "swr";
 import ContactTile from "../ContactTile";
+import { useTheme } from "next-themes";
 
 const AppFooter: React.FC = () => {
     const { data } = useSWR<Me>("/me");
@@ -17,11 +18,16 @@ const AppFooter: React.FC = () => {
         minHeight: "200px", // Minimum height for child div
     };
 
+
+    const { theme } = useTheme();
+
     return (
         <div
+            id="addtlInfo"
             style={{
                 height: "50vh",
-                backgroundColor: "#1e272e",
+                textAlign: "center",
+                backgroundColor: theme === "light" ? "#2ed573" : "#1e272e",
             }}
         >
             <div style={containerStyle}>
@@ -53,7 +59,7 @@ const AppFooter: React.FC = () => {
                     />
                 </div>
             </div>
-            <div style={{ textAlign: "center" }}>
+            <div style={{ textAlign: "center", fontWeight: "bold" }}>
                 <p>Email me : {data?.email}</p>
                 <p>© {new Date().getFullYear()} kmavillanosa</p>
             </div>

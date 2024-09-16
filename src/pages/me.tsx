@@ -14,11 +14,10 @@ const Me: NextPage = () => {
             <Layout>
                 <Headline />
                 <div>
+                <TechStack />
                     <QuickBackground />
-                    <WorkProjects />
-                    {/* <TechStack /> */}
-                    <h1 style={{ textAlign: "center", fontSize: "20px" }}>
-                        <b>Keep in touch</b>
+                    <h1 style={{ textAlign: "center", fontSize: "35px" }}>
+                        <b>Get in touch.</b>
                     </h1>
                 </div>
             </Layout>

@@ -23,10 +23,10 @@ const AppNavBar = () => {
 
     return (
         <Navbar
-            isBlurred
-            isBordered
-            // className="w-full"
-            position="static"
+            // isBlurred
+            // isBordered
+            className="w-full"
+            // position="static"
             onMenuOpenChange={setIsMenuOpen}
         >
             <NavbarContent>
@@ -43,7 +43,7 @@ const AppNavBar = () => {
                     <ThemeToggle />
                 </NavbarItem>
                 <NavbarItem>
-                    <Link href={`/assets/kim cyriel s. avillanosa.pdf`} target="_blank">
+                    <Link href={`/assets/kimavillanosa_resume.pdf`} target="_blank">
                         <Button
                             startContent={<InstallIcon />}
                             size="md"

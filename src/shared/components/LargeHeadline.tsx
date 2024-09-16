@@ -1,9 +1,10 @@
-import React from "react";
+import { useTheme } from "next-themes";
+import React, { useMemo } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 interface LargeHeadlineProps {
     text: string[];
-    color?: string;
+    color?: string,
     size: number; // Size of the headline text (in pixels)
     speed:
     | 1
@@ -110,25 +111,54 @@ interface LargeHeadlineProps {
 const LargeHeadline: React.FC<LargeHeadlineProps> = ({
     text,
     size,
-    color = "#212121",
     speed = 40,
+    color
 }) => {
+
+    const { theme } = useTheme();
+
+    const currentStyle = useMemo(() => {
+        return {
+            zIndex: 0,
+            borderRadius: "2px",
+            padding: "10px",
+            fontSize: `${size}em`,
+            fontWeight: "bold",
+        }
+    }, [theme])
+
+    if (color) {
+        return <TypeAnimation slot="end"
+            speed={speed}
+            sequence={text}
+            style={{
+                color: color,
+                ...currentStyle
+            }}
+        />
+    }
+
+    if (theme === "light") {
+        return <TypeAnimation slot="end"
+            speed={speed}
+            sequence={text}
+            style={{
+                color: "#212121",
+                ...currentStyle
+            }}
+        />
+    }
+
+
     return (
-        <div>
-            <TypeAnimation slot="end"
-                speed={speed}
-                sequence={text}
-                style={{
-                    zIndex: 0,
-                    borderRadius: "2px",
-                    // background: "#f5f6fa",
-                    padding: "10px",
-                    color: color,
-                    fontSize: `${size}em`,
-                    fontWeight: "bold",
-                }}
-            />
-        </div>
+        <TypeAnimation slot="end"
+            speed={speed}
+            sequence={text}
+            style={{
+                color: "#f1f2f6",
+                ...currentStyle
+            }}
+        />
     );
 };
 

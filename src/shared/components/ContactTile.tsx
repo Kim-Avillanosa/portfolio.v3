@@ -1,3 +1,4 @@
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import React from "react";
 
@@ -16,6 +17,11 @@ const ContactTile: React.FC<ContactTileProps> = ({
     caption,
     logoUrl,
 }) => {
+    const { theme } = useTheme();
+
+
+    const textColor: string = theme === "light" ? "#dfe4ea" : "#ced6e0"
+
     return (
         <div
             style={{
@@ -24,6 +30,7 @@ const ContactTile: React.FC<ContactTileProps> = ({
                 padding: "20px",
                 textAlign: "center",
                 justifyContent: "center",
+                color: textColor
             }}
             onClick={() => window.open(url, "_blank")}
         >
@@ -38,7 +45,7 @@ const ContactTile: React.FC<ContactTileProps> = ({
                 src={logoUrl}
                 alt={label}
             />
-            <h1 style={{ fontSize: "40px" }}>
+            <h1 style={{ fontSize: "40px", }}>
                 <strong>{label}</strong>
             </h1>
             <p>{caption}</p>

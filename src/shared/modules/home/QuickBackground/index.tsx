@@ -1,43 +1,29 @@
 import { Container, Row, Col } from "react-grid-system";
 import WorkExperience from "./WorkExperience";
 import LargeHeadline from "@/shared/components/LargeHeadline";
-import { Button } from "@nextui-org/react";
-import { scrollToMyDiv } from "@/shared/utils/scrollToDiv";
 const QuickBackground = () => {
+
+
     return (
         <div
-            className="workExperienceBg"
             id="quickbackground"
-            style={{ height: "100vh" }}
+            style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "100vh",
+            }}
         >
-            <Container style={{ padding: "30px" }}>
-                <Row>
-                    <Col
-                        xl={7}
-                        style={{
-                            textAlign: "center",
-                            padding: "10px",
-                        }}
-                    >
-                        <LargeHeadline
-                            color="#26de81"
-                            speed={1}
-                            size={4}
-                            text={["Career Background"]}
-                        />
-                        <Button
-                            variant="shadow"
-                            color="primary"
-                            size="lg"
-                            onClick={() => scrollToMyDiv("workProjects")}
-                        >
-                            See my projects
-                        </Button>
-                    </Col>
-                    <Col>
-                        <WorkExperience />
-                    </Col>
-                </Row>
+            <Container style={{ padding: "60px", textAlign: "center" }}>
+                <div style={{ paddingBottom: "50px", justifyContent: "center" }}>
+                    <LargeHeadline
+                        color="#2ed573"
+                        speed={1}
+                        size={4}
+                        text={["Expertise provided to"]}
+                    />
+                </div>
+                <WorkExperience />
             </Container>
         </div>
     );

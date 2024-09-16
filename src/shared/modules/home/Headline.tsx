@@ -37,7 +37,7 @@ const Headline = () => {
                     <LargeHeadline
                         speed={60}
                         color="#ffffff"
-                        text={["I'm a Senior Fullstack Software Engineer."]}
+                        text={["Senior Software Engineer from Palawan, Philippines."]}
                         size={1}
                     />
                 </div>
@@ -47,12 +47,12 @@ const Headline = () => {
                         style={{ margin: "2px" }}
                         size="lg"
                         color="default"
-                        onClick={() => scrollToMyDiv("quickbackground")}
+                        onClick={() => scrollToMyDiv("addtlInfo")}
                     >
                         See more
                     </Button>
 
-                    <Link href={`/assets/kim cyriel s. avillanosa.pdf`} target="_blank">
+                    <Link href={`/assets/kimavillanosa_resume.pdf`} target="_blank">
                         <Button
                             style={{ margin: "2px" }}
                             size="lg"
