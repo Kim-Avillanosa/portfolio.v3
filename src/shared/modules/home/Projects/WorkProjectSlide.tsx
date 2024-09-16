@@ -23,7 +23,7 @@ function modulo(m: number, n: number): number {
 }
 
 const WorkProjectSlide: React.FC = () => {
-  const { data, error } = useSWR<Project[]>("/projects");
+  const { data, error } = useSWR<Project[]>("/api/projects");
 
   const cardsLength: number = data ? data.length : 0;
 

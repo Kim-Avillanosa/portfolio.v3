@@ -4,7 +4,7 @@ import useSWR from "swr";
 import styles from "../../../../styles/WorkExperience.module.css"; // Assuming you use CSS modules
 
 const WorkExperience: React.FC = () => {
-    const { data, isLoading } = useSWR<Experience[]>("/experience");
+    const { data, isLoading } = useSWR<Experience[]>("/api/experience");
 
     if (isLoading)
         return (
