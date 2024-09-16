@@ -4,7 +4,6 @@
   "private": true,
   "homepage": ".",
   "scripts": {
-    "lint": "npm run lint",
     "dev:tailwind": "npx tailwindcss -i ./src/styles/globals.css -o ./public/output.css",
     "prod:tailwind": "npx tailwindcss -i ./src/styles/globals.css -o ./output.css",
     "build:dev": "npm run dev:tailwind && env-cmd -f ./variables/.env.development next build",
