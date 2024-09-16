@@ -3246,12 +3246,31 @@ video {
 }
 
 .quickInfoBg {
-  background-image: url(../../public/assets/timelapse.gif);
-  /* background-repeat: no-repeat; */
+  background-image: url("/assets/timelapse.gif");
+  background-repeat: no-repeat;
   background-size: cover;
-  /* You can also use 'contain' or specify dimensions */
   background-attachment: fixed;
-  /* Optional - makes the background fixed */
+}
+
+.workExperienceBg {
+  /* background-image: url("/assets/space.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.projectBg {
+  background-image: url("/assets/sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.techStackBg {
+  background-image: url("/assets/techstack.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .placeholder\:text-danger::-moz-placeholder {
