@@ -47,7 +47,7 @@ const AppNavBar = () => {
                         <Button
                             startContent={<InstallIcon />}
                             size="md"
-                            color="primary"
+                            color="success"
                             variant="shadow"
                         >
                             Download My Resume

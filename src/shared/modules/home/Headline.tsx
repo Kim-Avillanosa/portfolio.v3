@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { scrollToMyDiv } from "@/shared/utils/scrollToDiv";
 import useSWR from "swr";
 import Link from "next/link";
+import InstallIcon from "@/shared/components/Icons/InstallIcon";
 const Headline = () => {
     return (
         <div
@@ -54,9 +55,11 @@ const Headline = () => {
 
                     <Link href={`/assets/kimavillanosa_resume.pdf`} target="_blank">
                         <Button
+                            startContent={<InstallIcon />}
                             style={{ margin: "2px" }}
                             size="lg"
-                            color="primary"
+                            color="success"
+                            variant="bordered"
                             onClick={() => scrollToMyDiv("quickbackground")}
                         >
                             Download My Resume

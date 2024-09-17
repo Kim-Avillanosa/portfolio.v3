@@ -33,7 +33,18 @@ const WorkExperience: React.FC = () => {
                         />
                     </Card>
                 ))}
+                {data?.map((item, idx) => (
+                    <Card key={idx} className={styles.marqueeItem}>
+                        <Image
+                            alt={item.company}
+                            src={item.companyLogo}
+                            height={200}
+                            width={200}
+                        />
+                    </Card>
+                ))}
             </div>
+
         </div>
     );
 };

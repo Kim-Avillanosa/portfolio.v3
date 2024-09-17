@@ -5,7 +5,8 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Experience[]>
 ) {
-  res.status(200).json([
+  res.status(200).json(
+    [
     {
       type: "Full-time",
       company: "Amihan Solutions",
